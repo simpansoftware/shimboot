@@ -9,7 +9,7 @@ jobs:
 
     strategy: 
       matrix:
-        board: [corsola]
+        board: [corsola, dedede]
 
     runs-on: ubuntu-latest
     steps:
