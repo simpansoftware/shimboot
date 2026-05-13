@@ -36,7 +36,7 @@ jobs:
           sudo apt-get upgrade -y
           sudo DEBUG=1 ./build_complete.sh ${{ matrix.board }} compress_img=1 quiet=1 release=trixie
 
-      - name: upload img
+      - name: upload image
         uses: actions/upload-artifact@v4
         with:
           name: shimboot_${{ matrix.board }}
